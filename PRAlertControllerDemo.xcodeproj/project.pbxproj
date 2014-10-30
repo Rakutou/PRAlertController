@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93BEB1091A0219A900A9A661 /* PRAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BEB1081A0219A900A9A661 /* PRAlertControllerManager.m */; };
 		93D94A061A00F0850064843B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A051A00F0850064843B /* main.m */; };
 		93D94A091A00F0850064843B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A081A00F0850064843B /* AppDelegate.m */; };
 		93D94A0C1A00F0850064843B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A0B1A00F0850064843B /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		93D94A111A00F0850064843B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D94A101A00F0850064843B /* Images.xcassets */; };
 		93D94A141A00F0850064843B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D94A121A00F0850064843B /* LaunchScreen.xib */; };
 		93D94A201A00F0860064843B /* PRAlertControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A1F1A00F0860064843B /* PRAlertControllerDemoTests.m */; };
+		93D94A2C1A00F3510064843B /* PRAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A2B1A00F3510064843B /* PRAlertController.m */; };
+		93D94A2F1A01D3800064843B /* PRAlertControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D94A2E1A01D3800064843B /* PRAlertControllerUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93BEB1071A0219A900A9A661 /* PRAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRAlertControllerManager.h; path = Classes/PRAlertControllerManager.h; sourceTree = "<group>"; };
+		93BEB1081A0219A900A9A661 /* PRAlertControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRAlertControllerManager.m; path = Classes/PRAlertControllerManager.m; sourceTree = "<group>"; };
 		93D94A001A00F0850064843B /* PRAlertControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRAlertControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D94A041A00F0850064843B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D94A051A00F0850064843B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,10 @@
 		93D94A191A00F0860064843B /* PRAlertControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRAlertControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D94A1E1A00F0860064843B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93D94A1F1A00F0860064843B /* PRAlertControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAlertControllerDemoTests.m; sourceTree = "<group>"; };
+		93D94A2A1A00F3510064843B /* PRAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRAlertController.h; path = Classes/PRAlertController.h; sourceTree = "<group>"; };
+		93D94A2B1A00F3510064843B /* PRAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRAlertController.m; path = Classes/PRAlertController.m; sourceTree = "<group>"; };
+		93D94A2D1A01D3800064843B /* PRAlertControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRAlertControllerUtils.h; path = Classes/PRAlertControllerUtils.h; sourceTree = "<group>"; };
+		93D94A2E1A01D3800064843B /* PRAlertControllerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRAlertControllerUtils.m; path = Classes/PRAlertControllerUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		93D949F71A00F0850064843B = {
 			isa = PBXGroup;
 			children = (
+				93D94A291A00F32A0064843B /* Classes */,
 				93D94A021A00F0850064843B /* PRAlertControllerDemo */,
 				93D94A1C1A00F0860064843B /* PRAlertControllerDemoTests */,
 				93D94A011A00F0850064843B /* Products */,
@@ -117,6 +127,19 @@
 				93D94A1E1A00F0860064843B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D94A291A00F32A0064843B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93D94A2D1A01D3800064843B /* PRAlertControllerUtils.h */,
+				93D94A2E1A01D3800064843B /* PRAlertControllerUtils.m */,
+				93D94A2A1A00F3510064843B /* PRAlertController.h */,
+				93D94A2B1A00F3510064843B /* PRAlertController.m */,
+				93BEB1071A0219A900A9A661 /* PRAlertControllerManager.h */,
+				93BEB1081A0219A900A9A661 /* PRAlertControllerManager.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D94A2C1A00F3510064843B /* PRAlertController.m in Sources */,
 				93D94A0C1A00F0850064843B /* ViewController.m in Sources */,
+				93D94A2F1A01D3800064843B /* PRAlertControllerUtils.m in Sources */,
 				93D94A091A00F0850064843B /* AppDelegate.m in Sources */,
+				93BEB1091A0219A900A9A661 /* PRAlertControllerManager.m in Sources */,
 				93D94A061A00F0850064843B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
