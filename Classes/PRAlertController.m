@@ -195,6 +195,7 @@
 
 - (void)setTitle:(NSString *)title
 {
+    title.length > 0 ? nil : (title = nil);
     if (_title != title) {
         _title = title;
         if (OS_VERSION_LESS_THAN(@"8")) {
