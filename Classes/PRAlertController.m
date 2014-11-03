@@ -260,6 +260,7 @@
             }
         }
     } else {
+        title.length ? nil : (title = nil);
         alertController.alertControllerEntity = [UIAlertController alertControllerWithTitle:title
                                                                                     message:message
                                                                              preferredStyle:(UIAlertControllerStyle)preferredStyle];
