@@ -39,6 +39,12 @@
     if ([topViewController isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = (UINavigationController *)topViewController;
         topViewController = navigationController.viewControllers.lastObject;
+    } else if ([topViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)topViewController;
+        topViewController = tabBarController.selectedViewController;
+    } else {
+        UIViewController *presentedViewController = topViewController.presentedViewController;
+        return [self pr_topViewControllerForRootViewController:presentedViewController ?: topViewController];
     }
     UIViewController *presentedViewController = topViewController.presentedViewController;
     return presentedViewController ? [self pr_topViewControllerForRootViewController:presentedViewController] : topViewController;
