@@ -215,6 +215,7 @@
 
 - (void)setMessage:(NSString *)message
 {
+    message.length > 0 ? nil : (message = nil);
     if (_message != message) {
         _message = message;
         if (OS_VERSION_LESS_THAN(@"8")) {
@@ -240,6 +241,8 @@
 
 + (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(PRAlertControllerStyle)preferredStyle
 {
+    title.length ? nil : (title = nil);
+    message.length ? nil : (message = nil);
     PRAlertController *alertController = [[self alloc] init];
     alertController.title = title;
     alertController.message = message;
@@ -266,7 +269,6 @@
             }
         }
     } else {
-        title.length ? nil : (title = nil);
         alertController.alertControllerEntity = [UIAlertController alertControllerWithTitle:title
                                                                                     message:message
                                                                              preferredStyle:(UIAlertControllerStyle)preferredStyle];
