@@ -97,20 +97,26 @@
 
 - (void)show
 {
+    UIViewController *topViewController = [UIApplication sharedApplication].pr_topWindow.pr_topViewController;
     if (OS_VERSION_LESS_THAN(@"8")) {
         [[PRAlertControllerManager defaultManager] addController:self];
         switch (self.preferredStyle) {
             case PRAlertControllerStyleActionSheet:
-                [self.actionSheet showInView:[UIApplication sharedApplication].pr_topWindow.pr_topViewController.view];
+                [self.actionSheet showInView:topViewController.view];
                 break;
             case PRAlertControllerStyleAlert:
                 [self.alertView show];
                 break;
         }
     } else {
-        [[UIApplication sharedApplication].pr_topWindow.pr_topViewController presentViewController:self.alertControllerEntity
-                                                                                          animated:YES
-                                                                                        completion:nil];
+        self.alertControllerEntity.popoverPresentationController.sourceView = topViewController.view;
+        self.alertControllerEntity.popoverPresentationController.permittedArrowDirections = 0;
+        CGRect sourceRect = CGRectZero;
+        sourceRect.origin = topViewController.view.center;
+        self.alertControllerEntity.popoverPresentationController.sourceRect = sourceRect;
+        [topViewController presentViewController:self.alertControllerEntity
+                                        animated:YES
+                                      completion:nil];
     }
 }
 
