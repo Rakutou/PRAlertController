@@ -1,6 +1,8 @@
-## PRAlertController
+# PRAlertController
 
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/v/PRAlertController/badge.png)](http://cocoapods.org/?q=PRAlertController)
+
+## General
 
 Alert controller with the same APIs as iOS 8 SDK (text field not supported), compatible with iOS 7.
 
@@ -62,13 +64,15 @@ This code is distributed under the terms and conditions of the [MIT license](htt
 You can support me by:
 
 * sending me iTunes Gift Cards;
-* via Alipay: elethomhunter@gmail.com
-* via PayPal: elethomhunter@gmail.com
+* via [Alipay](https://www.alipay.com): elethomhunter@gmail.com
+* via [PayPal](https://www.paypal.com): elethomhunter@gmail.com
 
 :-)
 
 ## Contact
 
+* [Telegram](https://telegram.org): @elethom
 * [Email](mailto:elethomhunter@gmail.com)
 * [Twitter](https://twitter.com/elethomhunter)
+* [Blog](http://blog.projectrhinestone.org)
 
