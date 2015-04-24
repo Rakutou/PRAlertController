@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, PRAlertActionStyle) {
-    PRAlertActionStyleDefault = 0,
-    PRAlertActionStyleCancel,
-    PRAlertActionStyleDestructive
+    PRAlertActionStyleDefault = UIAlertActionStyleDefault,
+    PRAlertActionStyleCancel = UIAlertActionStyleCancel,
+    PRAlertActionStyleDestructive = UIAlertActionStyleDestructive,
 };
 
 typedef NS_ENUM(NSInteger, PRAlertControllerStyle) {
     PRAlertControllerStyleActionSheet = UIAlertControllerStyleActionSheet,
-    PRAlertControllerStyleAlert = UIAlertControllerStyleAlert
+    PRAlertControllerStyleAlert = UIAlertControllerStyleAlert,
 };
 
 @class PRAlertAction;

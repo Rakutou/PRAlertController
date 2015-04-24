@@ -26,21 +26,7 @@
 - (UIAlertAction *)getActionEntity
 {
     UIAlertAction *action = [UIAlertAction actionWithTitle:self.title
-                                                     style:({
-        UIAlertActionStyle style;
-        switch (self.style) {
-            case PRAlertActionStyleDefault:
-                style = UIAlertActionStyleDefault;
-                break;
-            case PRAlertActionStyleCancel:
-                style = UIAlertActionStyleCancel;
-                break;
-            case PRAlertActionStyleDestructive:
-                style = UIAlertActionStyleDestructive;
-                break;
-        }
-        style;
-    })
+                                                     style:(UIAlertActionStyle)self.style
                                                    handler:^(UIAlertAction *action) {
                                                        if (self.handler) {
                                                            self.handler(self);
