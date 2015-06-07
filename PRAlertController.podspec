@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "PRAlertController"
-  s.version               = "0.1.4"
+  s.version               = "0.1.5"
   s.summary               = "Alert controller with same API as iOS 8 SDK (text field not supported), compatible with iOS 7."
   s.homepage              = "https://github.com/Elethom/PRAlertController"
   s.license               = { :type => "MIT", :file => "LICENSE" }
